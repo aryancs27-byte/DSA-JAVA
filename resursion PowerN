@@ -10,3 +10,30 @@ public int powerN(int base, int n) {
     return base * powerN(base,n-1);
   }
 }
+         orrr
+
+
+if n is  evem
+ base^n = base^n/2 * base^n/2
+  return base * powerN(base,n/2);
+
+         orr
+
+
+if n is odd
+base^n = base * base^n/2 * Base^n/2   
+
+
+orrrrr
+
+
+
+public int powerN(int base, int n) {
+if(n==0)
+return 1;
+
+if(n%2==0)
+ return temp*temp;
+ 
+ else
+ return temp*temp*temp;
